@@ -21,16 +21,11 @@
   padding-bottom: 5px;
 }
 
-.link_main {
+.active {   /* исправлен класс */
   text-decoration: none;
-  list-style-type: none;
-}
-
-.link_list {
   font-size: 18px;
   font-weight: 400;
   text-underline-offset: 4px;
-  text-decoration: underline;
 }
 
 .header_logo {
@@ -38,7 +33,7 @@
   height: 105px;
 }
 
-.address {
+.address {   /* исправлен класс */
   padding-left: 186px;
   padding-bottom: 5px;
   font-size: 18px;
@@ -47,16 +42,11 @@
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   font-style: normal;
-}
-
-.header_address {
-  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.main_link_marker {
+.link_list_no-bullit {   /* исправлен класс */
   list-style-type: none;
-  text-decoration: none;
 }
 
 .cover {
@@ -291,6 +281,7 @@
 
 .title_about {
   color: black;
+  text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
@@ -298,6 +289,7 @@
 
 .about_text {
   align-self: flex-start;
+  margin-top: 73px;
   font-family: "Raleway", sans-serif;
   color: black;
   font-size: 20px;
@@ -305,35 +297,25 @@
   line-height: 24px;
 }
 
-.text_up {
-  padding-top: 76px;
-}
-
-.text_down {
-  padding-top: 25px;
+.text {
+  margin-bottom: 26px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  padding: 180px 25px 88px;
+  padding-top: 154px;
+  padding-right: 25px;
   gap: 140px;
   align-items: flex-start;
 }
 
 .footer_address {
-  font-style: normal;
-  padding-left: 25px;
-  text-underline-offset: 4px;
-}
-
-.footer_address_td {
-  white-space: nowrap;
-  text-decoration: none;
-  text-underline-offset: 4px;
+  padding-left: 50px;
 }
 
 .footer_menu_links {
+  padding-right: 45px;
   list-style-type: none;
   text-underline-offset: 4px;
 }
@@ -347,7 +329,7 @@
   line-height: normal;
 }
 
-.footer_main {
+.footer_menu-link_active {
   text-decoration: none;
 }
 
