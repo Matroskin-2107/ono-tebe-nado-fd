@@ -21,7 +21,7 @@
   padding-bottom: 5px;
 }
 
-.active {   /* исправлен класс */
+.active {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
@@ -33,7 +33,7 @@
   height: 105px;
 }
 
-.address {   /* исправлен класс */
+.address {
   padding-left: 186px;
   padding-bottom: 5px;
   font-size: 18px;
@@ -45,19 +45,22 @@
   text-underline-offset: 4px;
 }
 
-.link_list_no-bullit {   /* исправлен класс */
+.link_list_no-bullit {
   list-style-type: none;
 }
 
 .cover {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 757px;
+  padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  color: white;
-  text-transform: uppercase;
-  z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
 }
 
 .overlay {
@@ -75,69 +78,47 @@
 .cover_title {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 147px;
   gap: 20px;
-  text-transform: uppercase;
-}
-
-.cover_title span {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.text_cover {
-  position: relative;
-  top: 7px;
-  display: block;
-  line-height: 125px;
-  letter-spacing: 30px;
-}
-
-.text_cover_center {
-  position: relative;
-  top: 22px;
+  color: #ffffff;
   text-align: center;
-  line-height: 125px;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
   letter-spacing: 30px;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
+.text_cover_left {
+  text-align: start;
+}
+.text_cover_center {
+  text-align: center;
+}
 .text_cover_right {
-  position: relative;
-  top: 38px;
-  left: 30px;
-  text-align: right;
-  line-height: 125px;
-  letter-spacing: 30px;
+  text-align: end;
 }
-
 .no_spacing {
   letter-spacing: 0px;
 }
 
 .cover_description {
   display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-  padding: 0px 50px 55px 78px;
-  gap: 79px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 107px;
+  z-index: 2;
+  color: #fff;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
 .cover_text {
-  position: relative;
-  top: 4px;
-  right: 28px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
   word-spacing: 18px;
 }
 
 .button {
-  position: relative;
-  top: 4px;
-  left: 1px;
   width: 256px;
   height: 51px;
   border: 1px solid white;
@@ -220,9 +201,6 @@
 }
 
 .text_on_card {
-  position: relative;
-  top: 2px;
-  left: 3px;
   color: white;
   font-size: 20px;
   font-style: normal;
