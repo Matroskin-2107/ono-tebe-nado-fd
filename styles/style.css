@@ -21,11 +21,15 @@
   padding-bottom: 5px;
 }
 
-.active {
-  text-decoration: none;
+.link_list {
+  /*исправлено*/
   font-size: 18px;
   font-weight: 400;
   text-underline-offset: 4px;
+}
+
+.active {
+  text-decoration: none; /*исправлено*/
 }
 
 .header_logo {
